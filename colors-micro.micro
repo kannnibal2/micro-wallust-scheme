@@ -1,3 +1,10 @@
+# My micro text editor template for wallust
+# Add to wallust config: 
+# micro.template = 'colors-micro.micro' 
+# micro.target = '~/.config/micro/colorschemes/wallust.micro'
+#
+# And set colorscheme in Micro to wallust.micro: Ctrl-E -> set colorscheme wallust
+
 color-link default "{{ foreground }}"
 color-link comment "{{ color15 }}"
 
