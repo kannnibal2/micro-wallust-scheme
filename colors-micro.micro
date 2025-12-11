@@ -1,0 +1,42 @@
+color-link default "{{ foreground }}"
+color-link comment "{{ color15 }}"
+
+color-link identifier "{{ color14 }}"
+color-link identifier.class "{{ color14 }}"
+color-link identifier.var "{{ color14 }}"
+
+color-link constant "{{ color6 }}"
+color-link constant.number "{{ color6 }}"
+color-link constant.string "{{ color10 }}"
+
+color-link symbol "{{ color13 }}"
+color-link symbol.brackets "{{ color6 | lighten(0.4)}}"
+color-link symbol.tag "{{ color14 }}"
+
+color-link type "{{ color14 }}"
+color-link type.keyword "{{ color11 }}"
+
+color-link special "{{ color13 }}"
+color-link statement "{{ color5 }}"
+color-link preproc "{{ color13 }}"
+
+color-link underlined "{{ color12 }}"
+color-link error "bold {{ color9 }}"
+color-link todo "bold {{ color11 }}"
+
+color-link diff-added "{{ color10 }}"
+color-link diff-modified "{{ color11 }}"
+color-link diff-deleted "{{ color9 }}"
+
+color-link gutter-error "{{ color9 }}"
+color-link gutter-warning "{{ color11 }}"
+
+color-link statusline "{{ foreground }},{{ background | lighten(0.3)}}"
+color-link tabbar "{{ foreground }},{{ background | lighten(0.3)}}"
+color-link indent-char "{{ color1 }}"
+color-link line-number "{{ color1 }}"
+color-link current-line-number "{{ color5 | lighten(0.5)}}"
+
+color-link cursor-line "{{ background | lighten(0.3)}},{{ cursor }}"
+color-link color-column "{{ background | lighten(0.2)}}"
+color-link type.extended "default"
