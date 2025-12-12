@@ -1,23 +1,27 @@
 # My micro text editor template for wallust
-# Add to wallust config: 
+# Add to wallust config:
+#
+# check_contrast = true 
 # micro.template = 'colors-micro.micro' 
 # micro.target = '~/.config/micro/colorschemes/wallust.micro'
-#
+# 
+# The "check_contrast" variable is VERY important, as it stops wallust from generating many
+#	dark colors, which would make this almost unusable.
 # And set colorscheme in Micro to wallust.micro: Ctrl-E -> set colorscheme wallust
 
-color-link default "{{ foreground }}"
+color-link default "{{foreground}}"
 color-link comment "{{ color15 }}"
 
 color-link identifier "{{ color14 }}"
 color-link identifier.class "{{ color14 }}"
 color-link identifier.var "{{ color14 }}"
 
-color-link constant "{{ color6 }}"
-color-link constant.number "{{ color6 }}"
+color-link constant "{{ color8 }}"
+color-link constant.number "{{ color8 }}"
 color-link constant.string "{{ color10 }}"
 
 color-link symbol "{{ color13 }}"
-color-link symbol.brackets "{{ color6 | lighten(0.4)}}"
+color-link symbol.brackets "{{ color8 | lighten(0.4)}}"
 color-link symbol.tag "{{ color14 }}"
 
 color-link type "{{ color14 }}"
@@ -38,12 +42,12 @@ color-link diff-deleted "{{ color9 }}"
 color-link gutter-error "{{ color9 }}"
 color-link gutter-warning "{{ color11 }}"
 
-color-link statusline "{{ foreground }},{{ background | lighten(0.3)}}"
-color-link tabbar "{{ foreground }},{{ background | lighten(0.3)}}"
-color-link indent-char "{{ color1 }}"
-color-link line-number "{{ color1 }}"
+color-link statusline "{{foreground}},{{ background | lighten(0.3)}}"
+color-link tabbar "{{foreground}},{{background | lighten(0.3)}}"
+color-link indent-char "{{ color2 }}"
+color-link line-number "{{ color2 }}"
 color-link current-line-number "{{ color5 | lighten(0.5)}}"
 
-color-link cursor-line "{{ background | lighten(0.3)}},{{ cursor }}"
-color-link color-column "{{ background | lighten(0.2)}}"
+color-link cursor-line "{{background | saturate(0.5) | lighten(0.1)}},{{foreground}}"
+color-link color-column "{{background | lighten(0.2)}}"
 color-link type.extended "default"
